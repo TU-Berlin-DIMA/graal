@@ -189,6 +189,64 @@ public abstract class InteropLibrary extends Library {
     }
 
     /**
+     * Interopt for the == operator
+     * @param receiver
+     * @return
+     */
+    public boolean equalsOperator(Object receiver) {
+        return false;
+    }
+
+    /**
+     * Interopt for the for the ++ operator
+     * @param receiver
+     * @return
+     */
+    public boolean isBfNode(Object receiver)  {
+        return false;
+    }
+
+    public Object executeBinaryOperation(Object left, Object right, String operation) {
+        return false;
+    }
+
+    public boolean lessEqualsOperator(Object receiver) {
+        return false;
+    }
+
+    public boolean lessThenOperator(Object receiver) {
+        return false;
+    }
+
+    public boolean greaterThenOperator(Object receiver) {
+        return false;
+    }
+
+    public boolean greaterEqualsOperator(Object receiver) {
+        return false;
+    }
+
+    public boolean notEqualsOperator(Object receiver) {
+        return false;
+    }
+
+    public Object addOperator(Object receiver) throws UnsupportedMessageException {
+        throw UnsupportedMessageException.create();
+    }
+
+    public Object subOperator(Object receiver) throws UnsupportedMessageException {
+        throw UnsupportedMessageException.create();
+    }
+
+    public Object mulOperator(Object receiver) throws UnsupportedMessageException {
+        throw UnsupportedMessageException.create();
+    }
+
+    public Object divOperator(Object receiver) throws UnsupportedMessageException {
+        throw UnsupportedMessageException.create();
+    }
+
+    /**
      * Returns <code>true</code> if the receiver represents a <code>null</code> like value, else
      * <code>false</code>. Most object oriented languages have one or many values representing null
      * values. Invoking this message does not cause any observable side-effects.
